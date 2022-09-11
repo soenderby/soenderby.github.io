@@ -20,5 +20,5 @@ const App = (content) =>
 fetch('interesting.bib')
     .then(response => {
 	console.log(response.body)
-	return render(App(response.body)}))
+	return render(App(response.body))})
 
