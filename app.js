@@ -18,5 +18,7 @@ const App = (content) =>
 			createVirtualNode('p', null, content))
 			
 fetch('interesting.bib')
-    .then(response => render(App(response)))
+    .then(response => {
+	console.log(response)
+	return render(App(response)}))
 
