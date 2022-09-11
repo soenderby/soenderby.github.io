@@ -19,6 +19,6 @@ const App = (content) =>
 			
 fetch('interesting.bib')
     .then(response => {
-	console.log(response.body)
-	return render(App(response.body))})
+	console.log(response.text())
+	return render(App(response.text()))})
 
